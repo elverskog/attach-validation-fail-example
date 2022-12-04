@@ -1,0 +1,29 @@
+<div.inputStyledWrapper>
+  <if(typeof input.label === "string")>
+    <label.inputStyledLabel for=input.id>${ input.label }</label>
+  </if>
+  <input.inputStyled type="text" id=input.id required=input.required name=input.name placeholder=input.placeholder />  
+</div>
+
+style { 
+
+  div.inputStyledWrapper {
+    margin-bottom: 20px;
+  }
+
+  label.inputStyledLabel {
+    padding-bottom: 4px;
+    color: #666;
+    display: block;
+  }
+
+  input[type="text"].inputStyled {
+    border: 1px solid #999;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+}
